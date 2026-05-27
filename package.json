@@ -1,0 +1,30 @@
+{
+  "name": "yostar-design4-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "pnpm --filter @yo-star/yostar-design-site dev",
+    "build": "pnpm run build:lib && pnpm run build:site",
+    "build:lib": "pnpm --filter @yo-star/yostar-design build",
+    "build:site": "pnpm --filter @yo-star/yostar-design-site build",
+    "typecheck": "pnpm --filter @yo-star/yostar-design typecheck && pnpm --filter @yo-star/yostar-design-site typecheck",
+    "buildRoutes": "pnpm --filter @yo-star/yostar-design-site buildRoutes",
+    "clean": "rimraf node_modules packages/*/node_modules apps/*/node_modules packages/*/dist apps/*/dist"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.10.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "gray-matter": "^4.0.3",
+    "less": "^4.2.1",
+    "markdown-it": "^14.1.0",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vue-tsc": "^2.2.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "@yo-star/yostar-design",
+  "version": "0.1.0",
+  "description": "Yostar Design Vue components based on Ant Design Vue 4.x.",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/yostar-design.umd.cjs",
+  "module": "./dist/yostar-design.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/yostar-design.es.js",
+      "require": "./dist/yostar-design.umd.cjs"
+    },
+    "./style.css": "./dist/yostar-design.css",
+    "./button": {
+      "types": "./dist/components/button/index.d.ts",
+      "import": "./dist/button/index.js"
+    },
+    "./button/style.css": "./dist/button/style.css",
+    "./config-provider": {
+      "types": "./dist/components/config-provider/index.d.ts",
+      "import": "./dist/config-provider/index.js"
+    },
+    "./config-provider/style.css": "./dist/config-provider/style.css",
+    "./space": {
+      "types": "./dist/components/space/index.d.ts",
+      "import": "./dist/space/index.js"
+    },
+    "./space/style.css": "./dist/space/style.css",
+    "./resolver": {
+      "types": "./dist/resolver.d.ts",
+      "import": "./dist/resolver/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf dist && node --max-old-space-size=4096 ../../node_modules/vue-tsc/bin/vue-tsc.js -p tsconfig.build.json --noEmit && vite build && vite build --config vite.config.subpaths.ts && node --max-old-space-size=4096 ../../node_modules/typescript/bin/tsc -p tsconfig.build.json --emitDeclarationOnly && node scripts/copy-styles.mjs",
+    "typecheck": "node --max-old-space-size=4096 ../../node_modules/vue-tsc/bin/vue-tsc.js -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "ant-design-vue": ">=4.0.0 <5.0.0",
+    "vue": ">=3.4.0 <4.0.0"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.0"
+  },
+  "devDependencies": {
+    "ant-design-vue": "^4.2.6",
+    "vue": "^3.5.13"
+  }
+}

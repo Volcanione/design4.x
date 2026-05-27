@@ -1,0 +1,22 @@
+{
+  "name": "@yo-star/yostar-design-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "buildRoutes": "tsx scripts/generate-routes.ts",
+    "predev": "pnpm run buildRoutes",
+    "dev": "vite --host 0.0.0.0",
+    "prebuild": "pnpm run buildRoutes",
+    "build": "node --max-old-space-size=4096 ../../node_modules/vite/bin/vite.js build",
+    "pretypecheck": "pnpm run buildRoutes",
+    "typecheck": "node --max-old-space-size=4096 ../../node_modules/vue-tsc/bin/vue-tsc.js -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@yo-star/yostar-design": "workspace:*",
+    "ant-design-vue": "^4.2.6",
+    "markdown-it": "^14.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  }
+}
