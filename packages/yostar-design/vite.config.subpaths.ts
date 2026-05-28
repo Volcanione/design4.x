@@ -12,7 +12,9 @@ export default defineConfig({
       entry: {
         button: resolve(__dirname, 'src/components/button/index.ts'),
         'config-provider': resolve(__dirname, 'src/components/config-provider/index.ts'),
+        input: resolve(__dirname, 'src/components/input/index.ts'),
         resolver: resolve(__dirname, 'src/resolver.ts'),
+        select: resolve(__dirname, 'src/components/select/index.ts'),
         space: resolve(__dirname, 'src/components/space/index.ts'),
       },
       formats: ['es'],

@@ -1,6 +1,8 @@
 import { ConfigProvider as AConfigProvider } from 'ant-design-vue';
+import type { ThemeConfig } from 'ant-design-vue/es/config-provider/context';
 import { computed, defineComponent, provide, type ExtractPropTypes, type PropType } from 'vue';
 import { withInstall } from '../../_utils/with-install';
+import { getYoAntdTheme } from '../../theme';
 import { yoConfigProviderKey, type YoThemeMode } from './context';
 
 export const yoConfigProviderProps = () => ({
@@ -13,7 +15,7 @@ export const yoConfigProviderProps = () => ({
     default: undefined,
   },
   antdTheme: {
-    type: Object as PropType<Record<string, unknown>>,
+    type: Object as PropType<ThemeConfig>,
     default: undefined,
   },
 });
@@ -28,6 +30,7 @@ const ConfigProvider = defineComponent({
     const context = computed(() => ({
       themeMode: props.themeMode,
     }));
+    const mergedAntdTheme = computed(() => getYoAntdTheme(props.themeMode, props.antdTheme));
 
     provide(yoConfigProviderKey, context);
 
@@ -35,7 +38,7 @@ const ConfigProvider = defineComponent({
       <AConfigProvider
         {...attrs}
         prefixCls={props.antdPrefixCls}
-        theme={props.antdTheme}
+        theme={mergedAntdTheme.value}
         v-slots={slots}
       />
     );

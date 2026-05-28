@@ -8,7 +8,7 @@
     "dev": "pnpm --filter @yo-star/yostar-design-site dev",
     "build": "pnpm run build:lib && pnpm run build:site",
     "build:lib": "pnpm --filter @yo-star/yostar-design build",
-    "build:site": "pnpm --filter @yo-star/yostar-design-site build",
+    "build:site": "pnpm run buildRoutes && pnpm --filter @yo-star/yostar-design-site build",
     "typecheck": "pnpm --filter @yo-star/yostar-design typecheck && pnpm --filter @yo-star/yostar-design-site typecheck",
     "buildRoutes": "pnpm --filter @yo-star/yostar-design-site buildRoutes",
     "clean": "rimraf node_modules packages/*/node_modules apps/*/node_modules packages/*/dist apps/*/dist"

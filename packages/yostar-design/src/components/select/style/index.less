@@ -1,0 +1,40 @@
+.yo-select {
+  .ant-select-selector {
+    border-radius: var(--yo-radius-base);
+  }
+}
+
+.yo-select.ant-select-lg {
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-select.ant-select.ant-select-lg .ant-select-selector {
+  padding-inline: var(--yo-control-padding-inline-lg);
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-select.ant-select.ant-select-lg .ant-select-selection-item,
+.yo-select.ant-select.ant-select-lg .ant-select-selection-placeholder,
+.yo-select.ant-select.ant-select-lg .ant-select-selection-search-input {
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-select .ant-select-clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--yo-clear-icon-size);
+  height: var(--yo-clear-icon-size);
+  margin-top: calc(var(--yo-clear-icon-size) / -2);
+  font-size: var(--yo-clear-icon-size);
+  line-height: 1;
+}
+
+.yo-select .ant-select-clear .anticon {
+  font-size: var(--yo-clear-icon-size);
+}
+
+.yo-select.ant-select-disabled.yo-select--disabled-strong .ant-select-selection-item,
+.yo-select.ant-select-disabled.yo-select--disabled-strong .ant-select-selection-placeholder {
+  color: var(--yo-color-text-heading);
+}

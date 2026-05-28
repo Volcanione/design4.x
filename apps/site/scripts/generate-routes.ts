@@ -30,10 +30,36 @@ function toImportPath(fromFile: string, targetFile: string) {
 }
 
 function toDemoTitle(fileName: string) {
-  return basename(fileName, '.vue')
+  const key = basename(fileName, '.vue');
+  const titleMap: Record<string, string> = {
+    basic: '基础用法',
+    size: '三种尺寸',
+    'search-clear': '搜索与清除',
+    multiple: '多选模式',
+    disabled: '禁用状态',
+    status: '状态展示',
+    icon: '图标用法',
+  };
+
+  return titleMap[key] ?? key
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
+}
+
+function getDemoOrder(fileName: string) {
+  const key = basename(fileName, '.vue');
+  const orderMap: Record<string, number> = {
+    basic: 10,
+    size: 20,
+    icon: 30,
+    'search-clear': 40,
+    multiple: 50,
+    status: 60,
+    disabled: 70,
+  };
+
+  return orderMap[key] ?? 100;
 }
 
 function readComponents() {
@@ -56,6 +82,7 @@ function readComponents() {
       const demos = existsSync(demoDir)
         ? readdirSync(demoDir)
             .filter(fileName => fileName.endsWith('.vue'))
+            .sort((a, b) => getDemoOrder(a) - getDemoOrder(b) || a.localeCompare(b))
             .map(fileName => ({
               key: basename(fileName, '.vue'),
               title: toDemoTitle(fileName),

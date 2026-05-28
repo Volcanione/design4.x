@@ -8,6 +8,8 @@ const packageDir = join(currentDir, '..');
 const stylePairs = [
   ['src/style', 'dist/style'],
   ['src/components/button/style', 'dist/components/button/style'],
+  ['src/components/input/style', 'dist/components/input/style'],
+  ['src/components/select/style', 'dist/components/select/style'],
 ];
 
 stylePairs.forEach(([from, to]) => {
@@ -25,6 +27,8 @@ stylePairs.forEach(([from, to]) => {
 const cssPairs = [
   ['src/components/button/style/index.less', 'dist/button/style.css'],
   [null, 'dist/config-provider/style.css'],
+  ['src/components/input/style/index.less', 'dist/input/style.css'],
+  ['src/components/select/style/index.less', 'dist/select/style.css'],
   [null, 'dist/space/style.css'],
 ];
 

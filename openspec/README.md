@@ -19,6 +19,7 @@ openspec/
   project.md
   specs/
     component-authoring/spec.md
+    style-overrides/spec.md
     on-demand-imports/spec.md
     preview-site/spec.md
     build-and-release/spec.md
@@ -65,4 +66,3 @@ cd D:\yostar\test-yostar-design
 pnpm run typecheck
 pnpm run build
 ```
-

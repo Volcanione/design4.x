@@ -5,6 +5,8 @@ export interface YostarDesignResolverOptions {
 const componentMap: Record<string, string> = {
   YoButton: 'button',
   YoConfigProvider: 'config-provider',
+  YoInput: 'input',
+  YoSelect: 'select',
   YoSpace: 'space',
 };
 

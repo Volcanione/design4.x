@@ -1,2 +1,2 @@
 export { default, YoButton } from './Button';
-export type { YoButtonProps } from './Button';
+export type { YoButtonDisabledVariant, YoButtonProps } from './Button';

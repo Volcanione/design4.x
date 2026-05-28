@@ -1,6 +1,7 @@
 import { computed, inject, type ComputedRef, type InjectionKey } from 'vue';
+import type { YoThemeMode } from '../../theme';
 
-export type YoThemeMode = 'console';
+export type { YoThemeMode } from '../../theme';
 
 export interface YoConfigProviderContext {
   themeMode: YoThemeMode;

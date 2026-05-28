@@ -14,6 +14,9 @@
 
     <template v-else>
       <section v-for="demo in demos" :key="demo.key" class="demo-section">
+        <header class="demo-heading">
+          <h3>{{ demo.title }}</h3>
+        </header>
         <div class="demo-preview">
           <component :is="demo.component" />
         </div>

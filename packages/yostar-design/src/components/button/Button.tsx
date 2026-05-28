@@ -1,12 +1,17 @@
 import { Button as AButton } from 'ant-design-vue';
 import { computed, defineComponent, type DefineComponent, type ExtractPropTypes } from 'vue';
 import type { ButtonProps as AntButtonProps } from 'ant-design-vue/es/button';
+import { getDisabledVariantClass, yoDisabledVariantProps, type YoDisabledVariant } from '../../_utils/disabled';
 import { omitProps } from '../../_utils/props';
 import { withInstall, type WithInstall } from '../../_utils/with-install';
 import { useYoConfigProvider } from '../config-provider/context';
 import './style/index.less';
 
-export const yoButtonCustomProps = () => ({});
+export type YoButtonDisabledVariant = YoDisabledVariant;
+
+export const yoButtonCustomProps = () => ({
+  ...yoDisabledVariantProps(),
+});
 const yoButtonCustomPropKeys = Object.keys(yoButtonCustomProps());
 
 export const yoButtonProps = () => ({
@@ -33,7 +38,12 @@ const Button = defineComponent({
         <AButton
           {...forwardedProps.value}
           {...restAttrs}
-          class={['yo-button', themeClass.value, customClass]}
+          class={[
+            'yo-button',
+            themeClass.value,
+            getDisabledVariantClass('yo-button', restAttrs.disabled, props.disabledVariant),
+            customClass,
+          ]}
           v-slots={slots}
         />
       );

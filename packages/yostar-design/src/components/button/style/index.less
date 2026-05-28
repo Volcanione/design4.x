@@ -2,10 +2,24 @@
   border-radius: var(--yo-radius-base);
 }
 
+.yo-button.ant-btn > .anticon + span,
+.yo-button.ant-btn > span + .anticon {
+  margin-inline-start: var(--yo-button-icon-gap);
+}
+
+.yo-button.ant-btn:not(.ant-btn-icon-only) .ant-btn-loading-icon > .anticon {
+  margin-inline-end: var(--yo-button-icon-gap);
+}
+
+.yo-button.ant-btn[disabled].yo-button--disabled-strong,
+.yo-button.ant-btn-disabled.yo-button--disabled-strong {
+  color: var(--yo-color-text-heading);
+}
+
 .yo-button--console {
-  --yo-button-shadow-color: rgba(47, 107, 255, 0.2);
+  --yo-button-primary-shadow: var(--yo-shadow-primary);
 }
 
 .yo-button.ant-btn-primary {
-  box-shadow: 0 6px 14px var(--yo-button-shadow-color);
+  box-shadow: var(--yo-button-primary-shadow);
 }

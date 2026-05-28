@@ -51,3 +51,17 @@ Then `@yo-star/yostar-design/table` 必须可以成功导入
 And `YostarDesignResolver` 必须可以解析 `YoTable`
 And Volar 必须能获得正确的全局组件类型。
 
+### Requirement: 单组件交付闭环
+
+新增或改造公开 Yo 组件时，不能只完成 wrapper 代码。每个组件必须同步完成实现、样式、导出、resolver、文档和 demo。
+
+样式覆盖的具体规则必须遵循 `openspec/specs/style-overrides/spec.md`。
+
+#### Scenario: 新增 YoInput
+
+Given 新增 `YoInput`
+Then 必须实现 `packages/yostar-design/src/components/input/`
+And 必须提供 `yo-input` 稳定根类名
+And 必须完成组件样式或明确说明不需要自定义样式
+And 必须同步组件导出、全局安装、resolver 和 package exports
+And 必须提供 `index.zh-CN.md`、demo 和属性表。

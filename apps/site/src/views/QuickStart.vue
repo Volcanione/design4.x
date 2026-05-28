@@ -33,7 +33,7 @@
       <section class="doc-panel">
         <h2>4. ConfigProvider 配置</h2>
         <CodeBlock :code="configProviderCode" language="template" />
-        <p>当前框架统一为控制台主题，后续所有增强组件默认读取 console 配置。</p>
+        <p>当前框架统一为控制台主题，默认注入 Yostar AntDV token，并通过 CSS 变量给 Yo 组件样式复用。</p>
       </section>
     </div>
 
@@ -106,6 +106,14 @@ export default {
 
 const configProviderCode = `
 <yo-config-provider theme-mode="console">
+  <App />
+</yo-config-provider>
+
+<!-- 如需覆盖 AntDV token，可只传差异项 -->
+<yo-config-provider
+  theme-mode="console"
+  :antd-theme="{ token: { colorPrimary: '#3A7CFF' } }"
+>
   <App />
 </yo-config-provider>
 `;

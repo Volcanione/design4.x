@@ -1,13 +1,5 @@
 <template>
-  <yo-config-provider
-    theme-mode="console"
-    :antd-theme="{
-      token: {
-        colorPrimary: '#2f6bff',
-        borderRadius: 6,
-      },
-    }"
-  >
+  <yo-config-provider theme-mode="console">
     <div class="site-shell yo-root">
       <header class="site-header">
         <router-link class="home-link" to="/quick-start" aria-label="Home">

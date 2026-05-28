@@ -13,5 +13,6 @@ const YostarDesign: Plugin = {
 };
 
 export * from './components';
+export * from './theme';
 export type { YostarDesignOptions };
 export default YostarDesign;
