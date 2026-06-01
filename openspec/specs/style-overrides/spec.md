@@ -109,6 +109,33 @@ And 该规则应该使用公共 token `--yo-clear-icon-size`
 And 该规则必须收敛在 Yo 组件稳定类名下
 And 后续 `YoSelect`、`YoInputNumber` 等支持清除能力的组件应该复用同一尺寸规则。
 
+#### Scenario: Select 多选标签尺寸
+
+Given 组件是 `YoSelect`
+When 使用 `mode="multiple"` 或 `mode="tags"`
+Then 多选标签 `.ant-select-selection-item` 高度必须是 `20px`
+And 不同 `size` 下多选标签高度必须保持一致
+And 多选 selector 的 small/default/large 外层高度必须分别收敛为 `28px`、`32px`、`40px`
+And 多选模式必须保留选择器内部 padding
+And 所有覆盖必须收敛在 `.yo-select.ant-select-multiple` 下，不能影响单选 Select、Input 或原生 AntDV 组件。
+
+#### Scenario: Select 下拉面板样式
+
+Given 组件是 `YoSelect`
+When 下拉面板渲染
+Then 下拉面板必须包含稳定类名 `yo-select-dropdown`
+And 下拉面板左右内边距必须是 `0`
+And 下拉面板圆角必须是 `4px`
+And 下拉选项 `.ant-select-item` 上下内边距必须是 `8px`
+And 下拉选项 hover 背景必须是 `#F9FAFC`
+And 下拉选中项文本颜色必须是主题主色
+And 下拉滚动条必须使用 Yostar 滚动条 token
+And 下拉滚动条宽度必须是 `4px`
+And 下拉虚拟滚动条距离下拉面板右侧必须是 `4px`
+And 下拉滚动条默认背景色必须是 `#E5E5E5`
+And 虚拟滚动条 `.rc-virtual-list-scrollbar-thumb` 与原生 scrollbar fallback 必须保持一致视觉
+And 所有覆盖必须收敛在 `.yo-select-dropdown` 下，不能影响原生 AntDV Select。
+
 #### Scenario: YoButton 间距默认值
 
 Given 组件是 `YoButton`

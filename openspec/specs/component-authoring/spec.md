@@ -51,6 +51,14 @@ Then `@yo-star/yostar-design/table` 必须可以成功导入
 And `YostarDesignResolver` 必须可以解析 `YoTable`
 And Volar 必须能获得正确的全局组件类型。
 
+#### Scenario: 新增公开子组件
+
+Given `YoSelectOption` 是公开子组件
+Then 必须可以从所属组件子路径 `@yo-star/yostar-design/select` 成功导入
+And 全量安装必须注册对应模板名
+And `YostarDesignResolver` 必须可以解析该子组件
+And Volar 必须能获得正确的全局组件类型。
+
 ### Requirement: 单组件交付闭环
 
 新增或改造公开 Yo 组件时，不能只完成 wrapper 代码。每个组件必须同步完成实现、样式、导出、resolver、文档和 demo。

@@ -2,12 +2,12 @@ import type { Plugin } from 'vue';
 import { YoButton } from './button';
 import { YoConfigProvider } from './config-provider';
 import { YoInput } from './input';
-import { YoSelect } from './select';
+import { YoSelect, YoSelectOption } from './select';
 import { YoSpace } from './space';
 
-export const components: Plugin[] = [YoConfigProvider, YoButton, YoInput, YoSelect, YoSpace];
+export const components: Plugin[] = [YoConfigProvider, YoButton, YoInput, YoSelect, YoSelectOption, YoSpace];
 
-export { YoButton, YoConfigProvider, YoInput, YoSelect, YoSpace };
+export { YoButton, YoConfigProvider, YoInput, YoSelect, YoSelectOption, YoSpace };
 export type { YoButtonProps } from './button';
 export type { YoConfigProviderProps, YoThemeMode } from './config-provider';
 export type { YoInputProps } from './input';

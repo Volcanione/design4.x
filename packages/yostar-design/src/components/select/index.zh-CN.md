@@ -13,6 +13,10 @@ order: 2
 
 `size="large"` 时，选择器高度保持 `40px`，字号保持 `14px`，左右内边距为 `16px`。支持清除按钮的选择器中，清除图标尺寸统一为 `16px * 16px`。
 
+下拉面板会自动带有 `yo-select-dropdown` 稳定类名，面板左右内边距为 `0`，圆角为 `4px`，选项上下内边距为 `8px`。选项 hover 背景为 `#F9FAFC`，选中项文本色为主题主色。下拉滚动条宽度为 `4px`，距离面板右侧 `4px`，默认背景色为 `#E5E5E5`，并兼容虚拟滚动条和关闭虚拟滚动后的原生滚动条。
+
+需要使用模板插槽声明选项时，可以使用 `<yo-select-option>`。它直接复用 Ant Design Vue 的 `Select.Option` 识别逻辑，并支持 resolver 按需从 `@yo-star/yostar-design/select` 引入。
+
 ## Attributes
 
 | 属性 | 说明 | 类型 | 默认值 |

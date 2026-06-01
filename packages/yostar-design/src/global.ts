@@ -1,4 +1,4 @@
-import type { YoButton, YoConfigProvider, YoInput, YoSelect, YoSpace } from './components';
+import type { YoButton, YoConfigProvider, YoInput, YoSelect, YoSelectOption, YoSpace } from './components';
 
 declare module 'vue' {
   export interface GlobalComponents {
@@ -6,6 +6,7 @@ declare module 'vue' {
     YoConfigProvider: typeof YoConfigProvider;
     YoInput: typeof YoInput;
     YoSelect: typeof YoSelect;
+    YoSelectOption: typeof YoSelectOption;
     YoSpace: typeof YoSpace;
   }
 }

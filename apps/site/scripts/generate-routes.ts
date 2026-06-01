@@ -33,12 +33,14 @@ function toDemoTitle(fileName: string) {
   const key = basename(fileName, '.vue');
   const titleMap: Record<string, string> = {
     basic: '基础用法',
+    option: 'Option 用法',
     size: '三种尺寸',
     'search-clear': '搜索与清除',
     multiple: '多选模式',
     disabled: '禁用状态',
     status: '状态展示',
     icon: '图标用法',
+    'options-scroll': '长列表滚动',
   };
 
   return titleMap[key] ?? key
@@ -51,9 +53,11 @@ function getDemoOrder(fileName: string) {
   const key = basename(fileName, '.vue');
   const orderMap: Record<string, number> = {
     basic: 10,
+    option: 15,
     size: 20,
     icon: 30,
     'search-clear': 40,
+    'options-scroll': 45,
     multiple: 50,
     status: 60,
     disabled: 70,

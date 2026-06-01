@@ -1,5 +1,5 @@
 import { Select as ASelect } from 'ant-design-vue';
-import { computed, defineComponent, type DefineComponent, type ExtractPropTypes } from 'vue';
+import { computed, defineComponent, normalizeClass, type App, type DefineComponent, type ExtractPropTypes } from 'vue';
 import type { SelectProps as AntSelectProps } from 'ant-design-vue/es/select';
 import { getDisabledVariantClass, yoDisabledVariantProps, type YoDisabledVariant } from '../../_utils/disabled';
 import { omitProps } from '../../_utils/props';
@@ -32,12 +32,13 @@ const Select = defineComponent({
     const forwardedProps = computed(() => omitProps(props, yoSelectCustomPropKeys));
 
     return () => {
-      const { class: customClass, ...restAttrs } = attrs;
+      const { class: customClass, popupClassName, dropdownClassName, ...restAttrs } = attrs;
 
       return (
         <ASelect
           {...forwardedProps.value}
           {...restAttrs}
+          popupClassName={normalizeClass(['yo-select-dropdown', popupClassName, dropdownClassName])}
           class={[
             'yo-select',
             themeClass.value,
@@ -59,4 +60,11 @@ Object.assign(Select, {
 export const YoSelect: WithInstall<typeof ASelect & YoSelectComponent> = withInstall(
   Select as typeof ASelect & YoSelectComponent,
 );
+
+export const YoSelectOption = Object.assign(ASelect.Option, {
+  install(app: App) {
+    app.component('YoSelectOption', ASelect.Option);
+  },
+});
+
 export default YoSelect;

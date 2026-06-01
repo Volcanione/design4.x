@@ -1,13 +1,22 @@
 # Tasks: add-yo-select
 
 - [x] 新增 `YoSelect` wrapper。
+- [x] 新增 `YoSelectOption` 导出、全局注册和 resolver 映射。
 - [x] 新增 `yo-select` 稳定根类名和 `yo-select--console` 主题类名。
 - [x] 接入公共 `disabledVariant`。
 - [x] 新增 `select/style/index.less`。
 - [x] 支持 large 尺寸字号 `14px`、左右内边距 `16px`。
+- [x] 支持 large 尺寸圆角 `4px`。
 - [x] 设置 `allowClear` 清除图标尺寸为 `16px * 16px`。
+- [x] 设置多选模式标签高度为 `20px`，并补回 selector 内部 padding。
+- [x] 收敛多选 small/default/large 外层高度为 `28px`、`32px`、`40px`。
+- [x] 设置下拉面板稳定类名 `yo-select-dropdown`，并收敛面板 padding、圆角和选项上下内边距。
+- [x] 设置下拉选项 hover 背景为 `#F9FAFC`，选中项文本色为主题主色。
+- [x] 统一下拉面板虚拟滚动条与原生滚动条 fallback 样式。
 - [x] 新增 `index.zh-CN.md` 和基础 demo。
+- [x] 新增 `<yo-select-option>` 模板选项 demo。
 - [x] 将 Select 预览拆分为基础、尺寸、搜索清除、多选和禁用状态 demo。
+- [x] 新增长列表滚动 demo，用于观察多 options 场景。
 - [x] 预览页显示 demo 分组标题并按常用阅读顺序排序。
 - [x] 同步全量导出、全局类型、resolver 和 package exports。
 - [x] 同步按需样式复制脚本。

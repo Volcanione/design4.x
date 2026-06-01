@@ -4,7 +4,21 @@
       v-model:value="multipleValue"
       mode="multiple"
       allow-clear
-      placeholder="多选"
+      placeholder="默认多选"
+      :options="options"
+    />
+    <yo-select
+      v-model:value="smallValue"
+      size="small"
+      mode="multiple"
+      placeholder="小尺寸多选"
+      :options="options"
+    />
+    <yo-select
+      v-model:value="largeValue"
+      size="large"
+      mode="multiple"
+      placeholder="大尺寸多选"
       :options="options"
     />
     <yo-select v-model:value="tagsValue" mode="tags" placeholder="标签模式" :options="options" />
@@ -15,6 +29,8 @@
 import { ref } from 'vue';
 
 const multipleValue = ref<string[]>([]);
+const smallValue = ref<string[]>(['project']);
+const largeValue = ref<string[]>(['operation']);
 const tagsValue = ref<string[]>(['project']);
 
 const options = [

@@ -7,6 +7,7 @@ const componentMap: Record<string, string> = {
   YoConfigProvider: 'config-provider',
   YoInput: 'input',
   YoSelect: 'select',
+  YoSelectOption: 'select',
   YoSpace: 'space',
 };
 
