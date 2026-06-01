@@ -1,0 +1,65 @@
+.yo-switch {
+  --yo-switch-height: 22px;
+  --yo-switch-min-width: 44px;
+  --yo-switch-handle-size: 18px;
+  --yo-switch-handle-radius: 9px;
+  --yo-switch-handle-checked-start: 20px;
+  --yo-switch-inner-margin-min: 9px;
+  --yo-switch-inner-margin-max: 24px;
+  --yo-switch-inner-offset: 22px;
+  --yo-switch-inner-travel: 48px;
+  --yo-switch-inner-unchecked-margin-top: -22px;
+
+  font-size: var(--yo-font-size-base);
+}
+
+.yo-switch.ant-switch:not(.ant-switch-small) {
+  min-width: var(--yo-switch-min-width);
+  height: var(--yo-switch-height);
+  line-height: var(--yo-switch-height);
+}
+
+.yo-switch.ant-switch:not(.ant-switch-small) .ant-switch-handle {
+  width: var(--yo-switch-handle-size);
+  height: var(--yo-switch-handle-size);
+}
+
+.yo-switch.ant-switch:not(.ant-switch-small) .ant-switch-handle::before {
+  border-radius: var(--yo-switch-handle-radius);
+}
+
+.yo-switch.ant-switch-checked:not(.ant-switch-small) .ant-switch-handle {
+  inset-inline-start: calc(100% - var(--yo-switch-handle-checked-start));
+}
+
+.yo-switch.ant-switch:not(.ant-switch-small) .ant-switch-loading-icon.anticon {
+  top: 2px;
+}
+
+.yo-switch.ant-switch:not(.ant-switch-small) .ant-switch-inner {
+  padding-inline-start: var(--yo-switch-inner-margin-max);
+  padding-inline-end: var(--yo-switch-inner-margin-min);
+}
+
+.yo-switch.ant-switch:not(.ant-switch-small) .ant-switch-inner-checked {
+  margin-inline-start: calc(-100% + var(--yo-switch-inner-offset) - var(--yo-switch-inner-travel));
+  margin-inline-end: calc(100% - var(--yo-switch-inner-offset) + var(--yo-switch-inner-travel));
+}
+
+.yo-switch.ant-switch:not(.ant-switch-small) .ant-switch-inner-unchecked {
+  margin-top: var(--yo-switch-inner-unchecked-margin-top);
+}
+
+.yo-switch.ant-switch-checked:not(.ant-switch-small) .ant-switch-inner {
+  padding-inline-start: var(--yo-switch-inner-margin-min);
+  padding-inline-end: var(--yo-switch-inner-margin-max);
+}
+
+.yo-switch.ant-switch-checked:not(.ant-switch-small) .ant-switch-inner-unchecked {
+  margin-inline-start: calc(100% - var(--yo-switch-inner-offset) + var(--yo-switch-inner-travel));
+  margin-inline-end: calc(-100% + var(--yo-switch-inner-offset) - var(--yo-switch-inner-travel));
+}
+
+.yo-switch.ant-switch-disabled.yo-switch--disabled-strong .ant-switch-inner {
+  color: var(--yo-color-text-heading);
+}

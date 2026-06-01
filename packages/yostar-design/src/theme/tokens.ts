@@ -63,6 +63,7 @@ export const yoConsoleCssVars = {
   '--yo-color-bg-elevated': '#ffffff',
   '--yo-color-fill': '#F9FAFC',
   '--yo-color-fill-secondary': '#F5F6F7',
+  '--yo-color-fill-hover': '#EEEFF2',
   '--yo-color-table-row-hover': '#F9FAFC',
   '--yo-color-disabled-bg': '#F5F6F7',
   '--yo-color-code-bg': '#101828',

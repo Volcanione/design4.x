@@ -136,6 +136,21 @@ And 下拉滚动条默认背景色必须是 `#E5E5E5`
 And 虚拟滚动条 `.rc-virtual-list-scrollbar-thumb` 与原生 scrollbar fallback 必须保持一致视觉
 And 所有覆盖必须收敛在 `.yo-select-dropdown` 下，不能影响原生 AntDV Select。
 
+#### Scenario: Select 筛选样式
+
+Given 组件是 `YoSelect`
+When 使用 `variant="filter"` 或传入 `label`
+Then 组件必须启用 `yo-select-filter` 外层稳定类名
+And 默认 `YoSelect` 渲染路径必须保持不变
+And `label` 宽度必须根据文字内容自适应
+And 筛选样式背景必须读取 Yostar 填充色 token
+And 默认态 `label` 与右侧 Select 之间必须展示 `#E6E8ED` 分割线
+And hover 态分割线必须隐藏
+And hover 态右侧 Select 背景必须是 `#EEEFF2`
+And hover 态右侧 Select 边框色必须与 hover 背景一致
+And 下拉宽度与左侧位置必须默认对齐整个 `yo-select-filter` 外层容器
+And 所有覆盖必须收敛在 `.yo-select-filter` 和 `.yo-select--filter` 下，不能影响原生 AntDV Select。
+
 #### Scenario: YoButton 间距默认值
 
 Given 组件是 `YoButton`

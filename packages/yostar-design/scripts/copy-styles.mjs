@@ -8,8 +8,14 @@ const packageDir = join(currentDir, '..');
 const stylePairs = [
   ['src/style', 'dist/style'],
   ['src/components/button/style', 'dist/components/button/style'],
+  ['src/components/checkbox/style', 'dist/components/checkbox/style'],
+  ['src/components/date-picker/style', 'dist/components/date-picker/style'],
   ['src/components/input/style', 'dist/components/input/style'],
+  ['src/components/input-number/style', 'dist/components/input-number/style'],
+  ['src/components/radio/style', 'dist/components/radio/style'],
   ['src/components/select/style', 'dist/components/select/style'],
+  ['src/components/switch/style', 'dist/components/switch/style'],
+  ['src/components/time-picker/style', 'dist/components/time-picker/style'],
 ];
 
 stylePairs.forEach(([from, to]) => {
@@ -26,10 +32,16 @@ stylePairs.forEach(([from, to]) => {
 
 const cssPairs = [
   ['src/components/button/style/index.less', 'dist/button/style.css'],
+  ['src/components/checkbox/style/index.less', 'dist/checkbox/style.css'],
   [null, 'dist/config-provider/style.css'],
+  ['src/components/date-picker/style/index.less', 'dist/date-picker/style.css'],
   ['src/components/input/style/index.less', 'dist/input/style.css'],
+  ['src/components/input-number/style/index.less', 'dist/input-number/style.css'],
+  ['src/components/radio/style/index.less', 'dist/radio/style.css'],
   ['src/components/select/style/index.less', 'dist/select/style.css'],
   [null, 'dist/space/style.css'],
+  ['src/components/switch/style/index.less', 'dist/switch/style.css'],
+  ['src/components/time-picker/style/index.less', 'dist/time-picker/style.css'],
 ];
 
 cssPairs.forEach(([from, to]) => {

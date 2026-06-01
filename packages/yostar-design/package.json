@@ -21,16 +21,36 @@
       "import": "./dist/button/index.js"
     },
     "./button/style.css": "./dist/button/style.css",
+    "./checkbox": {
+      "types": "./dist/components/checkbox/index.d.ts",
+      "import": "./dist/checkbox/index.js"
+    },
+    "./checkbox/style.css": "./dist/checkbox/style.css",
     "./config-provider": {
       "types": "./dist/components/config-provider/index.d.ts",
       "import": "./dist/config-provider/index.js"
     },
     "./config-provider/style.css": "./dist/config-provider/style.css",
+    "./date-picker": {
+      "types": "./dist/components/date-picker/index.d.ts",
+      "import": "./dist/date-picker/index.js"
+    },
+    "./date-picker/style.css": "./dist/date-picker/style.css",
     "./input": {
       "types": "./dist/components/input/index.d.ts",
       "import": "./dist/input/index.js"
     },
     "./input/style.css": "./dist/input/style.css",
+    "./input-number": {
+      "types": "./dist/components/input-number/index.d.ts",
+      "import": "./dist/input-number/index.js"
+    },
+    "./input-number/style.css": "./dist/input-number/style.css",
+    "./radio": {
+      "types": "./dist/components/radio/index.d.ts",
+      "import": "./dist/radio/index.js"
+    },
+    "./radio/style.css": "./dist/radio/style.css",
     "./select": {
       "types": "./dist/components/select/index.d.ts",
       "import": "./dist/select/index.js"
@@ -41,6 +61,16 @@
       "import": "./dist/space/index.js"
     },
     "./space/style.css": "./dist/space/style.css",
+    "./switch": {
+      "types": "./dist/components/switch/index.d.ts",
+      "import": "./dist/switch/index.js"
+    },
+    "./switch/style.css": "./dist/switch/style.css",
+    "./time-picker": {
+      "types": "./dist/components/time-picker/index.d.ts",
+      "import": "./dist/time-picker/index.js"
+    },
+    "./time-picker/style.css": "./dist/time-picker/style.css",
     "./resolver": {
       "types": "./dist/resolver.d.ts",
       "import": "./dist/resolver/index.js"
@@ -55,7 +85,8 @@
     "vue": ">=3.4.0 <4.0.0"
   },
   "dependencies": {
-    "@ant-design/icons-vue": "^7.0.0"
+    "@ant-design/icons-vue": "^7.0.0",
+    "dayjs": "^1.11.21"
   },
   "devDependencies": {
     "ant-design-vue": "^4.2.6",

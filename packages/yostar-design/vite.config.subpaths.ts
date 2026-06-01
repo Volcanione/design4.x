@@ -11,11 +11,17 @@ export default defineConfig({
     lib: {
       entry: {
         button: resolve(__dirname, 'src/components/button/index.ts'),
+        checkbox: resolve(__dirname, 'src/components/checkbox/index.ts'),
         'config-provider': resolve(__dirname, 'src/components/config-provider/index.ts'),
+        'date-picker': resolve(__dirname, 'src/components/date-picker/index.ts'),
         input: resolve(__dirname, 'src/components/input/index.ts'),
+        'input-number': resolve(__dirname, 'src/components/input-number/index.ts'),
+        radio: resolve(__dirname, 'src/components/radio/index.ts'),
         resolver: resolve(__dirname, 'src/resolver.ts'),
         select: resolve(__dirname, 'src/components/select/index.ts'),
         space: resolve(__dirname, 'src/components/space/index.ts'),
+        switch: resolve(__dirname, 'src/components/switch/index.ts'),
+        'time-picker': resolve(__dirname, 'src/components/time-picker/index.ts'),
       },
       formats: ['es'],
     },

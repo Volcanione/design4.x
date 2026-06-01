@@ -17,6 +17,8 @@ order: 2
 
 需要使用模板插槽声明选项时，可以使用 `<yo-select-option>`。它直接复用 Ant Design Vue 的 `Select.Option` 识别逻辑，并支持 resolver 按需从 `@yo-star/yostar-design/select` 引入。
 
+当需要用于列表筛选或查询条件时，可以使用 `variant="filter"` 与 `label` 组合。`label` 宽度会根据文字内容自适应，下拉宽度与左侧位置默认对齐整个筛选容器。默认态会在 `label` 与选择区域之间展示 `#E6E8ED` 分割线，hover 时分割线隐藏，右侧选择区域背景与边框为 `#EEEFF2`。
+
 ## Attributes
 
 | 属性 | 说明 | 类型 | 默认值 |
@@ -25,6 +27,8 @@ order: 2
 | options | 选项数据 | `Array<{ label: string; value: string \| number }>` | `[]` |
 | placeholder | 占位文本 | `string` | `-` |
 | size | 选择器大小 | `'large' \| 'middle' \| 'small'` | `'middle'` |
+| variant | 选择器视觉形态。`filter` 用于筛选条件样式 | `'default' \| 'filter'` | `'default'` |
+| label | 筛选样式左侧标签。传入后会自动启用筛选样式 | `string \| number` | `-` |
 | disabled | 是否禁用 | `boolean` | `false` |
 | disabledVariant | 禁用态视觉。`default` 完全继承 AntDV，`strong` 仅将选中内容文字提升为一级文字色 | `'default' \| 'strong'` | `'default'` |
 | allowClear | 是否显示清除按钮 | `boolean` | `false` |

@@ -13,8 +13,10 @@
 - [x] 设置下拉面板稳定类名 `yo-select-dropdown`，并收敛面板 padding、圆角和选项上下内边距。
 - [x] 设置下拉选项 hover 背景为 `#F9FAFC`，选中项文本色为主题主色。
 - [x] 统一下拉面板虚拟滚动条与原生滚动条 fallback 样式。
+- [x] 新增 `variant="filter"` 和 `label` 筛选样式，label 宽度自适应文字内容。
 - [x] 新增 `index.zh-CN.md` 和基础 demo。
 - [x] 新增 `<yo-select-option>` 模板选项 demo。
+- [x] 新增筛选样式 demo。
 - [x] 将 Select 预览拆分为基础、尺寸、搜索清除、多选和禁用状态 demo。
 - [x] 新增长列表滚动 demo，用于观察多 options 场景。
 - [x] 预览页显示 demo 分组标题并按常用阅读顺序排序。

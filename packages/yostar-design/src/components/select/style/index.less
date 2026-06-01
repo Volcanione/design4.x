@@ -89,6 +89,88 @@
   color: var(--yo-color-text-heading);
 }
 
+.yo-select-filter {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+  min-height: var(--yo-control-height-base);
+  overflow: hidden;
+  vertical-align: middle;
+  background: var(--yo-color-fill-secondary);
+  border-radius: var(--yo-radius-base);
+  transition: background-color 0.2s;
+}
+
+.yo-select-filter:hover {
+  background: var(--yo-color-fill-secondary);
+}
+
+.yo-select-filter__label {
+  position: relative;
+  flex: 0 0 auto;
+  padding-inline: 12px;
+  color: var(--yo-color-text-secondary);
+  font-size: var(--yo-font-size-base);
+  line-height: var(--yo-line-height-base);
+  white-space: nowrap;
+}
+
+.yo-select-filter__label::after {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 0;
+  width: 1px;
+  height: 16px;
+  background: var(--yo-color-border);
+  transform: translateY(-50%);
+  transition: opacity 0.2s;
+  content: "";
+}
+
+.yo-select-filter:hover .yo-select-filter__label::after {
+  opacity: 0;
+}
+
+.yo-select-filter .yo-select--filter {
+  flex: 1 1 auto;
+  min-width: 88px;
+}
+
+.yo-select-filter .yo-select--filter .ant-select-selector {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.yo-select-filter .yo-select--filter:not(.ant-select-disabled):hover .ant-select-selector {
+  background: var(--yo-color-fill-hover);
+  border-color: var(--yo-color-fill-hover);
+}
+
+.yo-select-filter:hover .yo-select--filter:not(.ant-select-disabled) .ant-select-selector {
+  background: var(--yo-color-fill-hover);
+  border-color: var(--yo-color-fill-hover);
+}
+
+.yo-select-filter .yo-select--filter.ant-select-focused .ant-select-selector {
+  background: var(--yo-color-bg-container);
+  border-color: var(--yo-color-primary);
+  box-shadow: none;
+}
+
+.yo-select-filter:hover .yo-select--filter.ant-select-focused:not(.ant-select-disabled) .ant-select-selector,
+.yo-select-filter .yo-select--filter.ant-select-focused:not(.ant-select-disabled):hover .ant-select-selector {
+  background: var(--yo-color-fill-hover);
+  border-color: var(--yo-color-fill-hover);
+  box-shadow: none;
+}
+
+.yo-select-filter .yo-select--filter.ant-select-disabled .ant-select-selector {
+  background: transparent;
+  border-color: transparent;
+}
+
 .yo-select-dropdown.ant-select-dropdown {
   padding-inline: 0;
   border-radius: var(--yo-radius-base);
