@@ -4,11 +4,14 @@ export interface YostarDesignResolverOptions {
 
 const componentMap: Record<string, string> = {
   YoButton: 'button',
+  YoCascader: 'cascader',
   YoCheckbox: 'checkbox',
   YoCheckboxGroup: 'checkbox',
   YoConfigProvider: 'config-provider',
   YoDatePicker: 'date-picker',
+  YoDateRangePicker: 'date-picker',
   YoInput: 'input',
+  YoTextarea: 'input',
   YoInputNumber: 'input-number',
   YoRadio: 'radio',
   YoRadioButton: 'radio',
@@ -18,6 +21,7 @@ const componentMap: Record<string, string> = {
   YoSpace: 'space',
   YoSwitch: 'switch',
   YoTimePicker: 'time-picker',
+  YoTimeRangePicker: 'time-picker',
 };
 
 export function YostarDesignResolver(options: YostarDesignResolverOptions = {}) {

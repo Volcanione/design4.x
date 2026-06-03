@@ -8,6 +8,7 @@ const packageDir = join(currentDir, '..');
 const stylePairs = [
   ['src/style', 'dist/style'],
   ['src/components/button/style', 'dist/components/button/style'],
+  ['src/components/cascader/style', 'dist/components/cascader/style'],
   ['src/components/checkbox/style', 'dist/components/checkbox/style'],
   ['src/components/date-picker/style', 'dist/components/date-picker/style'],
   ['src/components/input/style', 'dist/components/input/style'],
@@ -32,6 +33,7 @@ stylePairs.forEach(([from, to]) => {
 
 const cssPairs = [
   ['src/components/button/style/index.less', 'dist/button/style.css'],
+  ['src/components/cascader/style/index.less', 'dist/cascader/style.css'],
   ['src/components/checkbox/style/index.less', 'dist/checkbox/style.css'],
   [null, 'dist/config-provider/style.css'],
   ['src/components/date-picker/style/index.less', 'dist/date-picker/style.css'],

@@ -1,0 +1,148 @@
+.yo-cascader {
+  .ant-select-selector {
+    border-radius: var(--yo-radius-base);
+  }
+}
+
+.yo-cascader.ant-select-lg {
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-cascader.ant-select.ant-select-lg .ant-select-selector {
+  border-radius: var(--yo-radius-base);
+  padding-inline: var(--yo-control-padding-inline-lg);
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-cascader.ant-select.ant-select-lg .ant-select-selection-item,
+.yo-cascader.ant-select.ant-select-lg .ant-select-selection-placeholder,
+.yo-cascader.ant-select.ant-select-lg .ant-select-selection-search-input {
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-cascader.ant-select.ant-select-multiple .ant-select-selector {
+  box-sizing: border-box;
+  padding-block: var(--yo-select-multiple-padding-block);
+  padding-inline: var(--yo-select-multiple-padding-inline);
+}
+
+.yo-cascader.ant-select.ant-select-multiple.ant-select-sm .ant-select-selector {
+  min-height: var(--yo-control-height-sm);
+  padding-block: calc((var(--yo-control-height-sm) - var(--yo-select-multiple-item-height) - 2px) / 2);
+}
+
+.yo-cascader.ant-select.ant-select-multiple:not(.ant-select-sm):not(.ant-select-lg) .ant-select-selector {
+  min-height: var(--yo-control-height-base);
+}
+
+.yo-cascader.ant-select.ant-select-multiple.ant-select-lg .ant-select-selector {
+  min-height: var(--yo-control-height-lg);
+  padding-inline: var(--yo-control-padding-inline-lg);
+}
+
+.yo-cascader.ant-select.ant-select-multiple .ant-select-selection-overflow {
+  gap: 4px;
+}
+
+.yo-cascader.ant-select.ant-select-multiple .ant-select-selection-overflow-item {
+  align-self: center;
+}
+
+.yo-cascader.ant-select.ant-select-multiple .ant-select-selection-item {
+  height: var(--yo-select-multiple-item-height);
+  margin: 0;
+  line-height: calc(var(--yo-select-multiple-item-height) - 2px);
+}
+
+.yo-cascader.ant-select.ant-select-multiple .ant-select-selection-search {
+  height: var(--yo-select-multiple-item-height);
+  margin: 0;
+  line-height: var(--yo-select-multiple-item-height);
+}
+
+.yo-cascader.ant-select.ant-select-multiple .ant-select-selection-search-input {
+  height: var(--yo-select-multiple-item-height);
+}
+
+.yo-cascader.ant-select.ant-select-multiple .ant-select-selector::after {
+  margin: 0;
+  line-height: var(--yo-select-multiple-item-height);
+}
+
+.yo-cascader .ant-select-clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--yo-clear-icon-size);
+  height: var(--yo-clear-icon-size);
+  margin-top: calc(var(--yo-clear-icon-size) / -2);
+  font-size: var(--yo-clear-icon-size);
+  line-height: 1;
+}
+
+.yo-cascader .ant-select-clear .anticon {
+  font-size: var(--yo-clear-icon-size);
+}
+
+.yo-cascader.ant-select-disabled.yo-cascader--disabled-strong .ant-select-selection-item,
+.yo-cascader.ant-select-disabled.yo-cascader--disabled-strong .ant-select-selection-placeholder {
+  color: var(--yo-color-text-heading);
+}
+
+.yo-cascader-dropdown.ant-cascader-dropdown {
+  padding-inline: 0;
+  border-radius: var(--yo-radius-base);
+}
+
+.yo-cascader-dropdown .ant-cascader-menu-item {
+  padding-block: 8px;
+}
+
+.yo-cascader-dropdown .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+.yo-cascader-dropdown .ant-cascader-menu-item:hover:not(.ant-cascader-menu-item-disabled) {
+  background: var(--yo-color-table-row-hover);
+}
+
+.yo-cascader-dropdown .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+.yo-cascader-dropdown .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled) .ant-cascader-menu-item-content {
+  color: var(--yo-color-primary);
+}
+
+.yo-cascader-dropdown .rc-virtual-list-scrollbar {
+  right: var(--yo-scrollbar-inset-inline-end) !important;
+  width: var(--yo-scrollbar-size) !important;
+}
+
+.yo-cascader-dropdown .rc-virtual-list-scrollbar-thumb {
+  background: var(--yo-scrollbar-thumb-bg) !important;
+  border-radius: var(--yo-radius-lg) !important;
+}
+
+.yo-cascader-dropdown .rc-virtual-list-scrollbar-thumb:hover,
+.yo-cascader-dropdown .rc-virtual-list-scrollbar-thumb-moving {
+  background: var(--yo-scrollbar-thumb-bg-hover) !important;
+}
+
+.yo-cascader-dropdown .ant-cascader-menu {
+  padding-inline: 0;
+  scrollbar-color: var(--yo-scrollbar-thumb-bg) transparent;
+  scrollbar-width: thin;
+}
+
+.yo-cascader-dropdown .ant-cascader-menu::-webkit-scrollbar {
+  width: var(--yo-scrollbar-size);
+  height: var(--yo-scrollbar-size);
+}
+
+.yo-cascader-dropdown .ant-cascader-menu::-webkit-scrollbar-thumb {
+  background: var(--yo-scrollbar-thumb-bg);
+  border-radius: var(--yo-radius-lg);
+}
+
+.yo-cascader-dropdown .ant-cascader-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--yo-scrollbar-thumb-bg-hover);
+}
+
+.yo-cascader-dropdown .ant-cascader-menu::-webkit-scrollbar-track {
+  background: transparent;
+}

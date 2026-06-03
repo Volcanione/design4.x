@@ -1,11 +1,15 @@
 # Tasks: add-yo-input
 
 - [x] 新增 `YoInput` wrapper。
+- [x] 新增 `YoTextarea` wrapper。
 - [x] 新增 `yo-input` 稳定根类名和 `yo-input--console` 主题类名。
+- [x] 新增 `yo-textarea` 稳定根类名和 `yo-textarea--console` 主题类名。
 - [x] 接入公共 `disabledVariant`。
 - [x] 新增 `input/style/index.less`。
 - [x] 新增 `index.zh-CN.md` 和基础 demo。
 - [x] 补充带 prefix/suffix 图标的输入框 demo。
+- [x] 补充 `appearance="search"` 搜索外观 demo。
+- [x] 补充多行文本 textarea demo。
 - [x] 设置 `YoInput size="large"` 左右内边距为 `16px`。
 - [x] 设置 `YoInput size="large"` 字号保持 `14px`。
 - [x] 设置 `YoInput allowClear` 清除图标尺寸为 `16px * 16px`。

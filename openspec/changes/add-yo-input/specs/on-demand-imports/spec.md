@@ -24,3 +24,10 @@ Given `unplugin-vue-components` 遇到 `<yo-input>`
 When `YostarDesignResolver()` 接收到 `YoInput`
 Then 它必须返回 `@yo-star/yostar-design/input`
 And 默认 sideEffects 必须指向 `@yo-star/yostar-design/input/style.css`。
+
+#### Scenario: Resolver 解析 YoTextarea
+
+Given `unplugin-vue-components` 遇到 `<yo-textarea>`
+When `YostarDesignResolver()` 接收到 `YoTextarea`
+Then 它必须返回 `@yo-star/yostar-design/input`
+And 默认 sideEffects 必须指向 `@yo-star/yostar-design/input/style.css`。

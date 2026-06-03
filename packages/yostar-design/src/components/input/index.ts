@@ -1,2 +1,8 @@
-export { default, YoInput } from './Input';
-export type { YoInputDisabledVariant, YoInputProps } from './Input';
+export { default, YoInput, YoTextarea } from './Input';
+export type {
+  YoInputAppearance,
+  YoInputDisabledVariant,
+  YoInputProps,
+  YoTextareaDisabledVariant,
+  YoTextareaProps,
+} from './Input';

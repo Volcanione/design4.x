@@ -1,8 +1,8 @@
 <template>
   <yo-space>
     <yo-date-picker v-model:value="value" show-time timezone="UTC+8" />
-    <yo-date-picker :value="value" show-time timezone="UTC+9" />
-    <yo-date-picker :value="value" show-time timezone="local" />
+    <yo-date-picker v-model:value="value" show-time timezone="UTC+9" />
+    <yo-date-picker v-model:value="value" show-time timezone="local" />
   </yo-space>
 </template>
 

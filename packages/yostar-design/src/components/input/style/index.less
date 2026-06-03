@@ -1,15 +1,87 @@
-.yo-input {
+.yo-input,
+.yo-textarea {
   border-radius: var(--yo-radius-base);
+}
+
+.yo-textarea.ant-input,
+.yo-textarea textarea {
+  padding: 9px 16px;
+  resize: vertical;
+}
+
+.yo-textarea.ant-input-textarea-show-count {
+  position: relative;
+}
+
+.yo-textarea.ant-input-textarea-show-count::after {
+  position: absolute;
+  right: 16px;
+  bottom: 9px;
+  margin-bottom: 0;
+  color: var(--yo-color-text-secondary);
+  line-height: 22px;
+  pointer-events: none;
+}
+
+.yo-textarea.ant-input-textarea-show-count textarea {
+  padding-bottom: 31px;
 }
 
 .yo-input.ant-input-lg,
 .yo-input.ant-input-affix-wrapper-lg {
+  height: var(--yo-control-height-lg);
   font-size: var(--yo-control-font-size-lg);
+  line-height: var(--yo-line-height-base);
+  padding-block: var(--yo-control-padding-block-lg);
   padding-inline: var(--yo-control-padding-inline-lg);
 }
 
 .yo-input.ant-input-affix-wrapper-lg .ant-input {
   font-size: var(--yo-control-font-size-lg);
+  line-height: var(--yo-line-height-base);
+}
+
+.yo-textarea.ant-input-lg,
+.yo-textarea .ant-input-lg {
+  font-size: var(--yo-control-font-size-lg);
+  padding-inline: var(--yo-control-padding-inline-lg);
+}
+
+.yo-input--search.ant-input,
+.yo-input--search.ant-input-affix-wrapper {
+  background-color: var(--yo-color-bg-layout);
+  border-color: var(--yo-color-bg-layout);
+  box-shadow: none;
+}
+
+.yo-input--search.ant-input:not(.ant-input-disabled):not([disabled]):hover,
+.yo-input--search.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  background-color: var(--yo-color-fill-hover);
+  border-color: var(--yo-color-fill-hover);
+}
+
+.yo-input--search.ant-input:focus,
+.yo-input--search.ant-input-focused,
+.yo-input--search.ant-input-affix-wrapper-focused {
+  background-color: var(--yo-color-bg-container);
+  border-color: var(--yo-color-primary);
+  box-shadow: none;
+}
+
+.yo-input--search.ant-input-affix-wrapper .ant-input {
+  background-color: transparent;
+}
+
+.yo-input--search.ant-input-affix-wrapper .ant-input-prefix,
+.yo-input--search.ant-input-affix-wrapper .ant-input-suffix {
+  color: var(--yo-color-text-secondary);
+}
+
+.yo-input--search.ant-input[disabled],
+.yo-input--search.ant-input-disabled,
+.yo-input--search.ant-input-affix-wrapper-disabled {
+  background-color: var(--yo-color-disabled-bg);
+  border-color: var(--yo-color-disabled-bg);
 }
 
 .yo-input .ant-input-clear-icon {
@@ -26,8 +98,17 @@
   font-size: var(--yo-clear-icon-size);
 }
 
+.yo-textarea .ant-input-data-count,
+.yo-textarea + .ant-input-data-count {
+  color: var(--yo-color-text-secondary);
+}
+
 .yo-input.ant-input[disabled].yo-input--disabled-strong,
 .yo-input.ant-input-disabled.yo-input--disabled-strong,
-.yo-input.ant-input-affix-wrapper-disabled.yo-input--disabled-strong .ant-input {
+.yo-input.ant-input-affix-wrapper-disabled.yo-input--disabled-strong .ant-input,
+.yo-textarea.ant-input[disabled].yo-textarea--disabled-strong,
+.yo-textarea.ant-input-disabled.yo-textarea--disabled-strong,
+.yo-textarea.yo-textarea--disabled-strong textarea[disabled],
+.yo-textarea.yo-textarea--disabled-strong textarea.ant-input-disabled {
   color: var(--yo-color-text-heading);
 }

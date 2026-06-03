@@ -11,6 +11,7 @@ export default defineConfig({
     lib: {
       entry: {
         button: resolve(__dirname, 'src/components/button/index.ts'),
+        cascader: resolve(__dirname, 'src/components/cascader/index.ts'),
         checkbox: resolve(__dirname, 'src/components/checkbox/index.ts'),
         'config-provider': resolve(__dirname, 'src/components/config-provider/index.ts'),
         'date-picker': resolve(__dirname, 'src/components/date-picker/index.ts'),

@@ -21,6 +21,11 @@
       "import": "./dist/button/index.js"
     },
     "./button/style.css": "./dist/button/style.css",
+    "./cascader": {
+      "types": "./dist/components/cascader/index.d.ts",
+      "import": "./dist/cascader/index.js"
+    },
+    "./cascader/style.css": "./dist/cascader/style.css",
     "./checkbox": {
       "types": "./dist/components/checkbox/index.d.ts",
       "import": "./dist/checkbox/index.js"
