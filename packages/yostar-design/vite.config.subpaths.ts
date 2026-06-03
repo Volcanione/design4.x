@@ -10,6 +10,7 @@ export default defineConfig({
     cssCodeSplit: true,
     lib: {
       entry: {
+        'auto-complete': resolve(__dirname, 'src/components/auto-complete/index.ts'),
         button: resolve(__dirname, 'src/components/button/index.ts'),
         cascader: resolve(__dirname, 'src/components/cascader/index.ts'),
         checkbox: resolve(__dirname, 'src/components/checkbox/index.ts'),
@@ -23,6 +24,7 @@ export default defineConfig({
         space: resolve(__dirname, 'src/components/space/index.ts'),
         switch: resolve(__dirname, 'src/components/switch/index.ts'),
         'time-picker': resolve(__dirname, 'src/components/time-picker/index.ts'),
+        upload: resolve(__dirname, 'src/components/upload/index.ts'),
       },
       formats: ['es'],
     },

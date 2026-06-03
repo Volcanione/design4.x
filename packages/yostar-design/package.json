@@ -16,6 +16,11 @@
       "require": "./dist/yostar-design.umd.cjs"
     },
     "./style.css": "./dist/yostar-design.css",
+    "./auto-complete": {
+      "types": "./dist/components/auto-complete/index.d.ts",
+      "import": "./dist/auto-complete/index.js"
+    },
+    "./auto-complete/style.css": "./dist/auto-complete/style.css",
     "./button": {
       "types": "./dist/components/button/index.d.ts",
       "import": "./dist/button/index.js"
@@ -76,6 +81,11 @@
       "import": "./dist/time-picker/index.js"
     },
     "./time-picker/style.css": "./dist/time-picker/style.css",
+    "./upload": {
+      "types": "./dist/components/upload/index.d.ts",
+      "import": "./dist/upload/index.js"
+    },
+    "./upload/style.css": "./dist/upload/style.css",
     "./resolver": {
       "types": "./dist/resolver.d.ts",
       "import": "./dist/resolver/index.js"

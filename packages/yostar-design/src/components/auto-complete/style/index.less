@@ -1,0 +1,99 @@
+.yo-auto-complete {
+  .ant-select-selector {
+    border-radius: var(--yo-radius-base);
+  }
+}
+
+.yo-auto-complete.ant-select-lg {
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-auto-complete.ant-select.ant-select-lg .ant-select-selector {
+  border-radius: var(--yo-radius-base);
+  padding-inline: var(--yo-control-padding-inline-lg);
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-auto-complete.ant-select.ant-select-lg .ant-select-selection-search-input,
+.yo-auto-complete.ant-select.ant-select-lg .ant-select-selection-placeholder {
+  font-size: var(--yo-control-font-size-lg);
+}
+
+.yo-auto-complete .ant-select-clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--yo-clear-icon-size);
+  height: var(--yo-clear-icon-size);
+  margin-top: calc(var(--yo-clear-icon-size) / -2);
+  font-size: var(--yo-clear-icon-size);
+  line-height: 1;
+}
+
+.yo-auto-complete .ant-select-clear .anticon {
+  font-size: var(--yo-clear-icon-size);
+}
+
+.yo-auto-complete.ant-select-disabled.yo-auto-complete--disabled-strong .ant-select-selection-search-input {
+  color: var(--yo-color-text-heading);
+}
+
+.yo-auto-complete-dropdown.ant-select-dropdown {
+  padding-inline: 0;
+  border-radius: var(--yo-radius-base);
+}
+
+.yo-auto-complete-dropdown .ant-select-item {
+  padding-block: 8px;
+}
+
+.yo-auto-complete-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background: var(--yo-color-table-row-hover);
+}
+
+.yo-auto-complete-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: var(--yo-color-primary);
+}
+
+.yo-auto-complete-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  .ant-select-item-option-content {
+  color: inherit;
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-scrollbar {
+  right: var(--yo-scrollbar-inset-inline-end) !important;
+  width: var(--yo-scrollbar-size) !important;
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-scrollbar-thumb {
+  background: var(--yo-scrollbar-thumb-bg) !important;
+  border-radius: var(--yo-radius-lg) !important;
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-scrollbar-thumb:hover,
+.yo-auto-complete-dropdown .rc-virtual-list-scrollbar-thumb-moving {
+  background: var(--yo-scrollbar-thumb-bg-hover) !important;
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-holder {
+  scrollbar-color: var(--yo-scrollbar-thumb-bg) transparent;
+  scrollbar-width: thin;
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-holder::-webkit-scrollbar {
+  width: var(--yo-scrollbar-size);
+  height: var(--yo-scrollbar-size);
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-holder::-webkit-scrollbar-thumb {
+  background: var(--yo-scrollbar-thumb-bg);
+  border-radius: var(--yo-radius-lg);
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-holder::-webkit-scrollbar-thumb:hover {
+  background: var(--yo-scrollbar-thumb-bg-hover);
+}
+
+.yo-auto-complete-dropdown .rc-virtual-list-holder::-webkit-scrollbar-track {
+  background: transparent;
+}

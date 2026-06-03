@@ -35,6 +35,7 @@ function toDemoTitle(fileName: string) {
     basic: '基础用法',
     button: '按钮样式',
     option: 'Option 用法',
+    autocomplete: '自动完成',
     group: '分组选项',
     nested: '内嵌选项',
     indeterminate: '半选状态',
@@ -58,6 +59,10 @@ function toDemoTitle(fileName: string) {
     timezone: '时区展示',
     'options-scroll': '长列表滚动',
     'load-data': '动态加载',
+    trigger: '自定义触发',
+    description: '说明文本',
+    preview: '图片预览',
+    actions: '替换与重传',
   };
 
   return titleMap[key] ?? key
@@ -92,6 +97,10 @@ function getDemoOrder(fileName: string) {
     'search-clear': 40,
     'options-scroll': 45,
     'load-data': 45,
+    trigger: 35,
+    description: 40,
+    preview: 45,
+    actions: 48,
     multiple: 50,
     status: 60,
     disabled: 70,

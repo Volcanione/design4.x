@@ -1,4 +1,7 @@
 import type {
+  YoAutoComplete,
+  YoAutoCompleteOptGroup,
+  YoAutoCompleteOption,
   YoButton,
   YoCascader,
   YoCheckbox,
@@ -18,10 +21,14 @@ import type {
   YoSwitch,
   YoTimePicker,
   YoTimeRangePicker,
+  YoUpload,
 } from './components';
 
 declare module 'vue' {
   export interface GlobalComponents {
+    YoAutoComplete: typeof YoAutoComplete;
+    YoAutoCompleteOptGroup: typeof YoAutoCompleteOptGroup;
+    YoAutoCompleteOption: typeof YoAutoCompleteOption;
     YoButton: typeof YoButton;
     YoCascader: typeof YoCascader;
     YoCheckbox: typeof YoCheckbox;
@@ -41,6 +48,7 @@ declare module 'vue' {
     YoSwitch: typeof YoSwitch;
     YoTimePicker: typeof YoTimePicker;
     YoTimeRangePicker: typeof YoTimeRangePicker;
+    YoUpload: typeof YoUpload;
   }
 }
 

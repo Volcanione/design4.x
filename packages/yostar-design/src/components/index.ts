@@ -1,4 +1,5 @@
 import type { Plugin } from 'vue';
+import { YoAutoComplete, YoAutoCompleteOptGroup, YoAutoCompleteOption } from './auto-complete';
 import { YoButton } from './button';
 import { YoCascader } from './cascader';
 import { YoCheckbox, YoCheckboxGroup } from './checkbox';
@@ -11,9 +12,13 @@ import { YoSelect, YoSelectOption } from './select';
 import { YoSpace } from './space';
 import { YoSwitch } from './switch';
 import { YoTimePicker, YoTimeRangePicker } from './time-picker';
+import { YoUpload } from './upload';
 
 export const components: Plugin[] = [
   YoConfigProvider,
+  YoAutoComplete,
+  YoAutoCompleteOption,
+  YoAutoCompleteOptGroup,
   YoButton,
   YoCascader,
   YoCheckbox,
@@ -30,9 +35,13 @@ export const components: Plugin[] = [
   YoSpace,
   YoSwitch,
   YoTimePicker,
+  YoUpload,
 ];
 
 export {
+  YoAutoComplete,
+  YoAutoCompleteOptGroup,
+  YoAutoCompleteOption,
   YoButton,
   YoCascader,
   YoCheckbox,
@@ -52,7 +61,9 @@ export {
   YoSwitch,
   YoTimePicker,
   YoTimeRangePicker,
+  YoUpload,
 };
+export type { YoAutoCompleteProps } from './auto-complete';
 export type { YoButtonProps } from './button';
 export type { YoCascaderProps } from './cascader';
 export type { YoCheckboxGroupProps, YoCheckboxProps } from './checkbox';
@@ -65,3 +76,4 @@ export type { YoSelectProps, YoSelectVariant } from './select';
 export type { YoSpaceProps } from './space';
 export type { YoSwitchProps } from './switch';
 export type { YoTimePickerProps, YoTimePickerTimezone, YoTimeRangePickerProps } from './time-picker';
+export type { YoUploadChangeParam, YoUploadFile, YoUploadListProps, YoUploadProps, YoUploadSizeValue } from './upload';

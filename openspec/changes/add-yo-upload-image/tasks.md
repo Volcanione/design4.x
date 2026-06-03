@@ -1,0 +1,21 @@
+# Tasks: add-yo-upload-image
+
+- [x] 新增 `YoUpload` wrapper。
+- [x] 新增 `yo-upload` 稳定根类名和 `yo-upload--console` 主题类名。
+- [x] 新增 `width`、`height`、`description` 扩展属性。
+- [x] 默认图片上传触发区域为 `80px * 80px`。
+- [x] 默认触发内容为 `+`，支持默认插槽替换。
+- [x] 支持 `description` 属性和 `description` 插槽。
+- [x] 默认 `accept="image/*"` 和 `listType="picture-card"`。
+- [x] 新增 `upload/style/index.less`。
+- [x] 新增 `index.zh-CN.md` 和 demo。
+- [x] 新增多图上传 demo。
+- [x] 新增替换和重传操作 demo。
+- [x] 同步全量导出、全局类型、resolver 和子路径 exports。
+- [x] 同步按需样式复制脚本。
+- [x] 同步预览路由生成标题。
+- [x] 通过 `pnpm run buildRoutes`。
+- [x] 通过 `pnpm run typecheck`。
+- [x] 通过 `pnpm --filter @yo-star/yostar-design build`。
+- [x] 通过 `git diff --check`。
+- [ ] 预览页 `/components/upload` 人工检查。

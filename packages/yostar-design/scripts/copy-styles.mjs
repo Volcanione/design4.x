@@ -7,6 +7,7 @@ const packageDir = join(currentDir, '..');
 
 const stylePairs = [
   ['src/style', 'dist/style'],
+  ['src/components/auto-complete/style', 'dist/components/auto-complete/style'],
   ['src/components/button/style', 'dist/components/button/style'],
   ['src/components/cascader/style', 'dist/components/cascader/style'],
   ['src/components/checkbox/style', 'dist/components/checkbox/style'],
@@ -17,6 +18,7 @@ const stylePairs = [
   ['src/components/select/style', 'dist/components/select/style'],
   ['src/components/switch/style', 'dist/components/switch/style'],
   ['src/components/time-picker/style', 'dist/components/time-picker/style'],
+  ['src/components/upload/style', 'dist/components/upload/style'],
 ];
 
 stylePairs.forEach(([from, to]) => {
@@ -32,6 +34,7 @@ stylePairs.forEach(([from, to]) => {
 });
 
 const cssPairs = [
+  ['src/components/auto-complete/style/index.less', 'dist/auto-complete/style.css'],
   ['src/components/button/style/index.less', 'dist/button/style.css'],
   ['src/components/cascader/style/index.less', 'dist/cascader/style.css'],
   ['src/components/checkbox/style/index.less', 'dist/checkbox/style.css'],
@@ -44,6 +47,7 @@ const cssPairs = [
   [null, 'dist/space/style.css'],
   ['src/components/switch/style/index.less', 'dist/switch/style.css'],
   ['src/components/time-picker/style/index.less', 'dist/time-picker/style.css'],
+  ['src/components/upload/style/index.less', 'dist/upload/style.css'],
 ];
 
 cssPairs.forEach(([from, to]) => {

@@ -3,6 +3,9 @@ export interface YostarDesignResolverOptions {
 }
 
 const componentMap: Record<string, string> = {
+  YoAutoComplete: 'auto-complete',
+  YoAutoCompleteOptGroup: 'auto-complete',
+  YoAutoCompleteOption: 'auto-complete',
   YoButton: 'button',
   YoCascader: 'cascader',
   YoCheckbox: 'checkbox',
@@ -22,6 +25,7 @@ const componentMap: Record<string, string> = {
   YoSwitch: 'switch',
   YoTimePicker: 'time-picker',
   YoTimeRangePicker: 'time-picker',
+  YoUpload: 'upload',
 };
 
 export function YostarDesignResolver(options: YostarDesignResolverOptions = {}) {
